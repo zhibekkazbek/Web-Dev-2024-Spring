@@ -7,6 +7,26 @@
         <title>Project: Recipe book</title>
         <meta charset="utf-8">
         <style>
+
+            h1 {
+                background-color: rgb(215, 145, 236);
+            }
+
+            body {
+                background-color: rgb(255, 255, 105);
+                color: purple;
+            }
+            
+            #all-recipes {
+                background-color: rgb(215, 145, 236);
+                color: purple;
+                width: fit-content;
+            }
+
+            .recipe-steps-full {
+                background-color: rgb(215, 145, 236);
+            }
+
         </style>
     </head>
     <body>
@@ -15,10 +35,10 @@
         
         <h2>Contents:</h2>
         
-        <ol>
+        <ol id="all-recipes">
             <li><a href="#ramen-recipe-details">Recipe #1: Ramen</a></li>
             <li><a href="#onigiri-recipe-details">Recipe #2: Onigiri</a></li>
-            <li><a href="#healthy-boule-recipe-details">Recipe #3: Healthy boule</a></li>
+            <li><a href="#healthy-boule-recipe-details">Recipe #3: Healthy bowl</a></li>
         </ol>
 
         <h2 id="ramen-recipe-details">Recipe #1: Ramen</h2>
@@ -28,7 +48,7 @@
             <li>Serves: Lunch/Dinner</li>
         </ul>
 
-        <img src="https://therecipecritic.com/wp-content/uploads/2017/09/BD13D8BA-9BFA-4BFD-AF09-17DC38CBFECA.jpeg" alt="" width="300">
+        <img src="https://therecipecritic.com/wp-content/uploads/2017/09/BD13D8BA-9BFA-4BFD-AF09-17DC38CBFECA.jpeg" alt="Ramen" width="300">
         
         <table>
             <thead>
@@ -61,7 +81,7 @@
             </tbody>
         </table>
         
-        <p>
+        <p class="recipe-steps-full">
             <strong>Step 1:</strong> Boil water in a pot over medium-high heat.<br>
             <strong>Step 2:</strong> Once the water is boiling, carefully add the instant ramen noodles to the pot. 
             Separate the noodles as they soften with a fork or chopsticks.<br>
@@ -91,7 +111,7 @@
                 <li>Serves: Lunch/Snack</li>
             </ul>
 
-            <img src="https://brokebankvegan.com/wp-content/uploads/2023/01/Onigiri-23.jpg" alt="" width="300">
+            <img src="https://brokebankvegan.com/wp-content/uploads/2023/01/Onigiri-23.jpg" alt="Onigiri" width="300">
             
             <table>
                 <thead>
@@ -120,7 +140,7 @@
                 </tbody>
             </table>
             
-        <p>
+        <p class="recipe-steps-full">
             <strong>Step 1:</strong> Rinse the sushi rice in a fine-mesh sieve under cold water until the water runs clear.
             This helps remove excess starch and prevents the rice from becoming too sticky.<br>
             <strong>Step 2:</strong> Combine the rinsed rice and water in a rice cooker or pot. 
@@ -146,14 +166,14 @@
             
         <p><em>Source: <a target="_blank" href="https://www.wandercooks.com/simple-onigiri-recipe/">Onigiri recipes websites</a></em></p>
         
-        <h2 id="healthy-boule-recipe-details">Recipe #3: Healthy boule</h2>
+        <h2 id="healthy-boule-recipe-details">Recipe #3: Healthy bowl</h2>
             
             <ul>
                 <li>Time: 30 min</li>
                 <li>Serves: Breakfast/Lunch/Dinner</li>
             </ul>
 
-            <img src="https://eatthegains.com/wp-content/uploads/2021/03/Sweetgreen-Harvest-Bowl-9-1-500x500.jpg" alt="" width="300">
+            <img src="https://eatthegains.com/wp-content/uploads/2021/03/Sweetgreen-Harvest-Bowl-9-1-500x500.jpg" alt="Healthy bowl" width="300">
 
             <table>
                 <thead>
@@ -190,7 +210,7 @@
                 </tbody>
             </table>
             
-        <p>
+        <p class="recipe-steps-full">
             <strong>Step 1:</strong> In a large mixing bowl, combine 3 cups of whole wheat flour, 
             1 packet of active dry yeast, 1 teaspoon of salt, 1 tablespoon of honey or maple syrup, 
             and 1 cup of warm water (about 110°F or 45°C). Mix until a dough forms.<br>
@@ -212,7 +232,7 @@
             Remove from the oven, let it cool slightly, then slice and serve.<br>
         </p>
             
-        <p><em>Source: <a target="_blank" href="https://www.bbcgoodfood.com/recipes/collection/quick-and-healthy-recipes">Healthy boule recipes websites</a></em></p>
+        <p><em>Source: <a target="_blank" href="https://www.bbcgoodfood.com/recipes/collection/quick-and-healthy-recipes">Healthy bowl recipes websites</a></em></p>
         
     </body>
 </html>
