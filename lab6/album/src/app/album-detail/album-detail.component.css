@@ -1,0 +1,80 @@
+.album-detail-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  border: solid 2px;
+  border-radius: 30px;
+  padding-left: 15%;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 100px;
+  padding-top: 10px;
+  text-align: center;
+  margin-top: 5%;
+  background-color: #00A5D2;
+  color:white;
+  border-color: white;
+}
+
+.album-detail-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+.editable-input {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: rgb(167, 167, 167);
+  margin-left: 2%;
+}
+
+.btns {
+  margin-left: 5%;
+  margin-top: 20px;
+  display: flex;/* Add some space above the buttons */
+}
+
+.save-button,
+.return-button,
+.photos-button {
+  padding: 5px 15px; /* Increase padding for better appearance */
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 15px; /* Add some space between buttons */
+  height: 40px;
+}
+
+.save-button {
+  background-color: #1fba58;
+  color: #fff;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: #126d14;
+}
+
+.return-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.return-button:hover {
+  background-color: #5c131b;
+}
+
+.photos-button {
+  background-color: #3062eb;
+  color: #fff;
+  border: none;
+}
+
+.photos-button:hover {
+  background-color: #191277;
+}

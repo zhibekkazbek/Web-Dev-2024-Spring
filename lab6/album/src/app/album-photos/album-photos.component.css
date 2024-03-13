@@ -1,0 +1,24 @@
+.photo {
+  margin: 10px;
+}
+
+.photo-img {
+  width: 300px;
+  height: auto;
+}
+
+.return-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 15px; /* Increase padding for better appearance */
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 15px; /* Add some space between buttons */
+  height: 40px;
+}
+
+.return-button:hover {
+  background-color: #5c131b;
+}

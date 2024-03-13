@@ -1,0 +1,26 @@
+.header {
+  background-color: #00A5D2;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+}
+
+li {
+  display: inline;
+  margin-right: 30px;
+}
+
+a {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
