@@ -12,7 +12,7 @@ def get_companies(request):
 
 def get_company(request, pk=None):
     try:
-        company = Company.objects.all()
+        company = Company.objects.get(id=pk)
         return JsonResponse(company.to_json())
     except Company.DoesNotExist as e:
         return JsonResponse({
@@ -34,10 +34,12 @@ def get_vacancy(request, pk = None):
     try:
         vacancy = Vacancy.objects.get(id=pk)
         return JsonResponse(vacancy.to_json())
-    except Vacancy.DoesNotExist as v:
+    except Vacancy.DoesNotExist as e:
         return JsonResponse({
-            'error': str(v)
+            'error': str(e)
         })
     
-def get_top_ten(request):
-    return Vacancy.objects.order_by('-salary')[:10]
+def get_top_ten(request, pk=None):
+    vacancies = Vacancy.objects.order_by('-salary')[:10]
+    vacancies_json = [vacancy.to_json() for vacancy in vacancies]
+    return JsonResponse(vacancies_json, safe=False)

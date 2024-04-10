@@ -29,7 +29,7 @@ class Vacancy(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     salary = models.FloatField()
-    company = models.ForeignKey(Company, related_name='vacancies', on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE)
 
     def str(self):
         return f"ID:{self.id}, Name: {self.name}, Description: {self.description}, Salary: {self.salary}, Company: {self.company}"
@@ -44,5 +44,5 @@ class Vacancy(models.Model):
             'name': self.name,
             'description': self.description,
             'salary': self.salary,
-            'company': self.company
+            'company': self.company.to_json()
         }
