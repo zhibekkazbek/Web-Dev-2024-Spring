@@ -21,7 +21,7 @@ def get_company(request, pk=None):
     
 def get_company_vacancies(request, pk=None):
     company = Company.objects.get(id=pk)
-    vacancies = Vacancy.objects.filter(company=company.name)
+    vacancies = Vacancy.objects.filter(company=company)
     vacancies_json = [vacancy.to_json() for vacancy in vacancies]
     return JsonResponse(vacancies_json, safe=False)
 
